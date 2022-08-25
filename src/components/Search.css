@@ -1,0 +1,68 @@
+.container {
+    max-width: 120rem;
+    min-height: 50rem;
+    font-size: 1.2rem;
+}
+
+.content {
+    display: flex;
+}
+
+.leftSide {
+    position: fixed;
+    height: 100vh;
+    width: 40rem;
+    background-size: cover;
+    background-image: url("../assets/shaker.jpg");
+}
+
+.cocktailSearch {
+    margin-left: 48%;
+    margin-right: 3%;
+}
+
+.cocktailSearch h1 {
+    font-size: 4rem;
+    margin: 6rem auto 3.5rem;
+}
+
+.cocktailSearch form {
+    margin-bottom: 9rem;
+}
+
+.cocktailSearch input[type="text"] {
+    width: 27.5rem;
+    padding: 0.8rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.btnSubmit, .btnSubmit:link, .btnSubmit:visited  {
+    width: 10rem;
+    padding: 0.8rem;
+    cursor: pointer;
+    background-color: black;
+    border:1px solid black;
+    color: white;
+}
+
+.btnSubmit:hover , .btnSubmit:active, .btnSubmit.focus{
+    background-color :#f45c11;
+    color: white;
+    border:1px solid#f45c11;
+    outline: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .leftSide {
+        /* visibility: hidden; */
+        display: none;
+    }
+    .cocktailSearch {
+        margin: 5rem 5rem;
+    }
+
+    .formSearch {
+        text-align: center;
+    }
+}
